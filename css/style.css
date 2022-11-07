@@ -17,11 +17,23 @@ p, span {
     font-weight: 400;
 }
 
+.bg-image-top {
+    position: absolute;
+    bottom: 50%;
+    right: 55%;
+}
+
 .container {
-    /* border: solid white 1px; */
     border-radius: 10px;
     max-width: 375px;
     margin: auto;
+    position: relative;
+    margin-top: 150px;
+}
+
+.top {
+    padding: 0;
+    max-height: 149px;
 }
 
 .card-bg {
@@ -34,13 +46,12 @@ p, span {
     border: white solid 7px;
     position: absolute;
     top: 6em;
-    left: 42%;
-    height: 105px;
+    margin: 0 8.28em;
 }
 
 .middle {
     background-color: white;
-    padding: 4.5em 0 2.5em 0;
+    padding: 4.5em 0 1.5em 0;
 }
 
 .name, .location  {
@@ -48,30 +59,63 @@ p, span {
     padding-top: .5em;
 }
 
+.name {
+    font-size: 18px;
+}
+
+.location {
+    font-size: medium;
+}
+
 span {
     padding-left: .3em;
 }
 
+hr {
+    border: none;
+    background-color: #dddddd;
+    height: 1px;
+}
+
 .bottom {
     background-color: white;
-    border-top: 1px solid hsl(0, 0%, 59%);
+    /* border-top: .1em solid hsl(0, 0%, 59%); */
     border-radius: 0 0 10px 10px;
-    display: flex;
+    display: flex; 
 }
 
 .count {
-    padding: 1em;
+    padding: 1.5em;
     text-align: center;
+    margin: auto;
+}
+
+.count > h1 {
+    font-size: larger;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .count-title {
     letter-spacing: .1em;
+    font-weight: 400;
+    font-size: x-small;
+    padding: .5em;
 }
 
 .attribution {
      font-size: 11px; text-align: center; 
+     position: relative;
+     top: 350px;
+     margin: auto;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.bg-image-bottom {
+    position: absolute;
+    top: 30%;
+    left: 50%;
 }
